@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boiler plate</title>
+
+    <!-- bootstrap 4 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- font awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="bg-light">
+    <div class="container bg-light">
+        <div style="margin-top:20px;"></div>
+        <div class="d-flex justify-content-center">
+        <i class="fab fa-bootstrap bg-violet text-white fa-5x m-2 p-2" aria-hidden="true"></i>
+        </div> 
+        <h2 class="text-center">Checkout form</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta ipsum reprehenderit doloremque labore nobis velit magnam deserunt molestiae quos!</p>
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="mb-3">Billing address</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="col m-2">
+                             <label for="First name" >First name</label>
+                             <input type="text" class="form-control">
+                        </div>
+                        <div class="col m-2">
+                            <label for="Last name" >Last name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <label for="username" >Username</label>
+                    <div class="input-group m-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group m-2">
+                         <label for="email" >Email <span class="text-muted">(optional)</span>
+                         </label>
+                         <input type="text" placeholder="you@example.com" class="form-control">
+                    </div>
+                    <div class="form-group m-2">
+                        <label for="address" >Address</label>
+                        <input type="text" placeholder="1234 Main St" class="form-control">
+                    </div>
+                    <div class="form-group m-2">
+                        <label for="address2" >Address 2 <span class="text-muted">(optional)</span></label>
+                        <input type="text" placeholder="Apartment or suite" class="form-control">
+                    </div>
+                    <div class="form-row">
+                        <div class="col m-2">
+                            <label for="country" >Country</label>
+                            <select name="country" id="country" class="form-control">
+                            <option>Choose</option>
+                            <option>United states</option>
+                            <option>India</option>
+                            </select>
+                        </div>
+                        <div class="col m-2">
+                            <label for="state" >State</label>
+                            <select name="state" id="state" class="form-control">
+                            <option>Choose</option>
+                            <option>California</option>
+                            <option>Tamilnadu</option>
+                            </select>
+                        </div>
+                        <div class="col m-2">
+                            <label for="zip" >Zip</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-check m-2">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">Shipping address is same as my billing address.
+                        </label>
+                    </div>
+                    <div class="form-check m-2">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">Save this information for the next time.
+                        </label>
+                    </div>
+                    <hr>
+                    <label class="h4">Payment method</label>
+                    <div class="form-check">
+                        <label for="creditcard" class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radioex" id="creditcard" checked >Credit card
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="debitcard" class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radioex" id="debitcard">Debit card
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label for="paypal" class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radioex" id="paypal">Paypal
+                        </label>
+                    </div>
+
+                    <div class="form-row my-3">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="nameoncard">Name on Card</label>
+                                <input type="text" class="form-control" name="nameoncard">
+                                <small class="text-muted">Full name displayed on card</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="creditcadno">Credit card number</label>
+                                <input type="text" class="form-control" name="creditcradno">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row my-3">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="expiration">Expiration</label>
+                                <input type="text" class="form-control" name="expiration">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" class="form-control" name="cvv">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <button class="my-3 btn btn-primary btn-block">Continue to checkout</button>  
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h4>Your Cart
+                    <span class="badge badge-primary badge-pill float-right">3</span>
+                </h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Product name 
+                        <span class="float-right">$12</span> 
+                        <small class="d-block">brief description</small>
+                    </li>
+                    <li class="list-group-item">Second product 
+                        <span class="float-right">$8</span> 
+                        <small class="d-block">brief description</small>
+                    </li>
+                    <li class="list-group-item">Third item 
+                        <span class="float-right">$5</span> 
+                        <small class="d-block">brief description</small>
+                    </li>
+                    <li class="list-group-item text-success">Promo code 
+                        <span class="float-right">-$5</span> 
+                        <small class="d-block">EXAMPLE CODE</small>
+                    </li>
+                    <li class="list-group-item">Total USD 
+                        <span class="float-right h5">$20</span>
+                    </li>
+                </ul>
+                <ul class="list-group my-3">
+                    <li class="list-group-item">
+                        <div class="input-group">
+                            <input type="text" placeholder="Promo code" class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-dark text-white">Redeem</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center my-3">
+             <i class="fa fa-copyright text-muted align-items-center"></i>
+                  <span class="text-muted">2017-2018 Company name</span>
+        </div>  
+        <div class="text-center my-3">
+            <a class="d-inline" href="#">Privacy</a>
+             <a  class="d-inline" href="#">Terms</a>
+             <a  class="d-inline" href="#">Support</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <div style="margin-top:20px;"></div>
+
+
+    <!-- bootstrap 4 script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Custom script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
